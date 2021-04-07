@@ -3,7 +3,9 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 module.exports = {
   siteMetadata: {
     title: "WebDev Portfolio",
@@ -33,7 +35,7 @@ module.exports = {
           // contentTypes : [`jobs`], //`projects`, `blogs`,
         //   singleType : `about`
         //  ONLY ADD TO ARRAY IF YOU HAVE DATA IN STRAPI !!!!
-        contentTypes: [`jobs`],
+        contentTypes: [`jobs`, `projects`],
         singleTypes: [],
       },
     },
