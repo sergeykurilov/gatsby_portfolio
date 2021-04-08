@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import Image from "gatsby-image"
 import { Link } from "gatsby"
 const Blog = ({ id, title, image, date, category, slug, desc }) => {
+    console.log(category)
   return (
       <Link to={`/blogs/${slug}`} className="blog" key={id}>
         <article>
@@ -21,6 +22,14 @@ const Blog = ({ id, title, image, date, category, slug, desc }) => {
       </Link>
   )
 }
-Blog.propTypes = {}
+Blog.propTypes = {
+    title:  PropTypes.string.isRequired,
+    image:  PropTypes.string.isRequired,
+    category:  PropTypes.object.isRequired,
+    slug:  PropTypes.string.isRequired,
+    desc:  PropTypes.string.isRequired,
+    categories: PropTypes.string.isRequired,
+
+}
 
 export default Blog
