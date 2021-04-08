@@ -8,12 +8,12 @@ require('dotenv').config({
 });
 module.exports = {
   siteMetadata: {
-    title: "WebDev Portfolio",
+    title: "Sergey Kurilov Portfolio",
     description: "This is WebDev Portfolio Site",
-    author: "@webdev",
-    twitterUsername: "@john_smilga",
+    author: "@devday",
+    twitterUsername: "@sergey_kurilov",
     image: "/twitter-img.png",
-    siteUrl: "https://testing-strapi-gatsby-build.netlify.app",
+    siteUrl: "https://clever-golick-aee975.netlify.app/",
   },
   plugins: [
     `gatsby-transformer-sharp`,
@@ -39,19 +39,19 @@ module.exports = {
         singleTypes: [`about`],
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-webfonts`,
-    //   options: {
-    //     fonts: {
-    //       google: [
-    //         {
-    //           family: "Roboto",
-    //           variants: ["400", "700"],
-    //         },
-    //         { family: "Open Sans" },
-    //       ],
-    //     },
-    //   },
-    // },
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Roboto",
+              variants: ["400", "700"],
+            },
+            { family: "Open Sans" },
+          ],
+        },
+      },
+    },
   ],
 }

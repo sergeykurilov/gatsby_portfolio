@@ -3,11 +3,16 @@ import Layout from "../components/Layout"
 import {graphql} from "gatsby"
 import Title from "../components/Title"
 import Image from "gatsby-image"
+import SEO from "../components/SEO"
 // ...GatsbyImageSharpFluid
 const About = ({data: {about: {nodes}}}) => {
    const {image, stack, title, info} = nodes[0]
 
+
+
+
     return <Layout>
+        <SEO  title="about" description="About webdev"/>
         <section className="about-page">
             <div className="section-center about-center">
                 <Image fluid={image.childImageSharp.fluid} className="about-img"/>
