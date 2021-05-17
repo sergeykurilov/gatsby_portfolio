@@ -13,7 +13,7 @@ module.exports = {
     author: "@devday",
     twitterUsername: "@sergey_kurilov",
     image: "/twitter-img.png",
-    siteUrl: "https://pensive-pike-962dfe.netlify.app/,
+    siteUrl: "https://pensive-pike-962dfe.netlify.app/",
   },
   plugins: [
     `gatsby-transformer-sharp`,
